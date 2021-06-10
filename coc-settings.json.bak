@@ -1,0 +1,605 @@
+{
+    "leetcode.trace.server": "messages",
+    "leetcode.enabled": true,
+    "leetcode.language": "java",
+
+
+
+    "coc.preferences.maxFileSize": "10MB",
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.jumpCommand": "edit",
+    "coc.preferences.rootPatterns": [
+        ".git",
+        ".hg",
+        ".projections.json"
+    ],
+    "coc.preferences.promptInput": true,
+    "coc.preferences.colorSupport": true,
+    "coc.preferences.watchmanPath": null,
+    "coc.preferences.floatQuickpick": false,
+    "coc.preferences.previewAutoClose": true,
+    "coc.preferences.previewMaxHeight": 12,
+    "coc.preferences.highlightTimeout": 500,
+    "coc.preferences.promptWorkspaceEdit": true,
+    "coc.preferences.listOfWorkspaceEdit": "location",
+    "coc.preferences.formatOnInsertLeave": false,
+    "coc.preferences.bracketEnterImprove": true,
+    "coc.preferences.formatOnSaveFiletypes": ["markdown","java"],
+    "coc.preferences.formatOnTypeFiletypes": [],
+    "coc.preferences.useQuickfixForLocations": false,
+    "coc.preferences.currentFunctionSymbolAutoUpdate": false,
+    "coc.preferences.snippets.enable": true,
+
+
+
+
+
+    "list.source.vimcommands.defaultOptions": [],
+    "list.height": 10,
+    "list.indicator": ">",
+    "list.signOffset": 900,
+    "list.limitLines": 30000,
+    "list.normalMappings": {},
+    "list.insertMappings": {},
+    "lists.disabledLists": [],
+    "list.selectedSignText": "*",
+    "list.maxPreviewHeight": 12,
+    "list.source.grep.args": [],
+    "list.previewSplitRight": false,
+    "list.source.files.args": [],
+    "list.extendedSearchMode": true,
+    "list.source.grep.command": "ag",
+    "list.source.tags.command": "ctags -R .",
+    "list.source.files.command": "edit",
+    "list.source.mru.maxLength": 1000,
+    "list.source.mru.defaultArgs": [],
+    "list.source.grep.useLiteral": true,
+    "list.source.grep.maxColumns": 300,
+    "list.interactiveDebounceTime": 100,
+    "list.source.symbols.excludes": [],
+    "list.source.maps.defaultArgs": [],
+    "list.source.tags.defaultArgs": [],
+    "list.source.grep.defaultArgs": [],
+    "list.source.gfiles.defaultOptions": [],
+    "list.source.bcommits.defaultArgs": [],
+    "list.source.bcommits.defaultOptions": [],
+    "list.source.branches.defaultArgs": [],
+    "list.source.branches.defaultOptions": [],
+    "list.source.buffers.defaultArgs": [],
+    "list.source.buffers.defaultOptions": [],
+    "list.source.cmdhistory.defaultArgs": [],
+    "list.source.cmdhistory.defaultOptions": [],
+    "list.source.colors.defaultArgs": [],
+    "list.source.colors.defaultOptions": [],
+    "list.source.commands.defaultArgs": [],
+    "list.source.commands.defaultOptions": [],
+    "list.source.commits.defaultArgs": [],
+    "list.source.commits.defaultOptions": [],
+    "list.source.diagnostics.defaultArgs": [],
+    "list.source.diagnostics.defaultOptions": [],
+    "list.source.explPresets.defaultArgs": [],
+    "list.source.explPresets.defaultOptions": [],
+    "list.source.extensions.defaultArgs": [],
+    "list.source.extensions.defaultOptions": [],
+    "list.source.files.defaultArgs": [],
+    "list.source.files.defaultOptions": [],
+    "list.source.files.excludePatterns": [],
+    "list.source.filetypes.defaultArgs": [],
+    "list.source.filetypes.defaultOptions": [],
+    "list.source.folders.defaultArgs": [],
+    "list.source.folders.defaultOptions": [],
+    "list.source.gfiles.defaultArgs": [],
+    "list.source.grep.defaultOptions": [
+        "--interactive"
+    ],
+    "list.source.grep.excludePatterns": [],
+    "list.source.gstatus.defaultArgs": [],
+    "list.source.gstatus.defaultOptions": [],
+    "list.source.helptags.defaultArgs": [],
+    "list.source.helptags.defaultOptions": [],
+    "list.source.issues.defaultArgs": [],
+    "list.source.issues.defaultOptions": [],
+    "list.source.lines.defaultArgs": [],
+    "list.source.lines.defaultOptions": [
+        "--interactive"
+    ],
+    "list.source.links.defaultArgs": [],
+    "list.source.links.defaultOptions": [],
+    "list.source.lists.defaultArgs": [],
+    "list.source.lists.defaultOptions": [],
+    "list.source.location.defaultArgs": [],
+    "list.source.location.defaultOptions": [],
+    "list.source.locationlist.defaultArgs": [],
+    "list.source.locationlist.defaultOptions": [],
+    "list.source.maps.defaultOptions": [],
+    "list.source.marketplace.defaultArgs": [],
+    "list.source.marketplace.defaultOptions": [],
+    "list.source.marks.defaultArgs": [],
+    "list.source.marks.defaultOptions": [],
+    "list.source.mru.defaultOptions": [],
+    "list.source.mru.excludePatterns": [
+        "**/.git/*",
+        "/tmp/*"
+    ],
+    "list.source.mru.ignoreGitIgnore": false,
+    "list.source.outline.ctagsFilestypes": [],
+    "list.source.outline.defaultArgs": [],
+    "list.source.outline.defaultOptions": [],
+    "list.source.quickfix.defaultArgs": [],
+    "list.source.quickfix.defaultOptions": [],
+    "list.source.searchhistory.defaultArgs": [],
+
+
+
+
+
+    "vimlsp.debug": true,
+    "vimlsp.indexes.count": 1,
+    "vimlsp.filetypes": [
+        "vim"
+    ],
+    "vimlsp.indexes.gap": 100,
+    "vimlsp.trace.server": "messages",
+    "vimlsp.indexes.runtimepath": true,
+    "vimlsp.diagnostic.enable": true,
+    "vimlsp.suggest.fromVimruntime": true,
+    "vimlsp.suggest.fromRuntimepath": false,
+    "vimlsp.indexes.projectRootPatterns": [
+        ".git",
+        "autoload",
+        "plugin"
+    ],
+
+
+
+
+
+    "javascript.showUnused": true,
+    "javascript.suggest.names": true,
+    "javascript.suggest.paths": true,
+    "javascript.format.enabled": true,
+    "javascript.validate.enable": true,
+    "javascript.suggest.enabled": true,
+    "javascript.format.semicolons": "ignore",
+    "javascript.suggest.autoImports": true,
+    "javascript.preferences.quoteStyle": "auto",
+    "javascript.referencesCodeLens.enable": true,
+    "javascript.suggestionActions.enabled": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "javascript.updateImportsOnFileMove.enable": true,
+    "javascript.implementationsCodeLens.enable": true,
+    "javascript.preferences.useAliasesForRenames": true,
+    "javascript.preferences.importModuleSpecifier": "auto",
+    "javascript.format.insertSpaceAfterConstructor": false,
+    "javascript.format.insertSpaceAfterTypeAssertion": false,
+    "javascript.format.insertSpaceAfterCommaDelimiter": true,
+    "javascript.preferences.importModuleSpecifierEnding": "auto",
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+
+
+
+
+    "translator.toLang":"zh",
+    "translator.engines":[
+        "bing",
+        "google",
+        "youdao",
+        "haici"
+    ],
+    "translator.enableHover": false,
+    "translator.maxsize": 5000,
+    "translator.window.maxWidth": 999,
+    "translator.window.maxHeight": 999,
+
+    "coc.preferences.hoverTarget": "preview",
+    "coc.preferences.enableFloatHighlight": true,
+    "coc.preferences.snippetStatusText": "Ⓢ ",
+    "coc.preferences.extensionUpdateCheck": "daily",
+    "coc.preferences.messageLevel": "error",
+    "coc.source.around.firstMatch": false,
+    "coc.source.buffer.firstMatch": false,
+
+    "suggest.detailMaxLength": 60,
+    "suggest.noselect": true,
+    "suggest.enablePreselect": true,
+    "suggest.triggerAfterInsertEnter": true,
+    "suggest.autoTrigger": "always",
+    "suggest.timeout": 500,
+    "suggest.enablePreview": true,
+    "suggest.floatEnable": true,
+    "suggest.removeDuplicateItems": false,
+    "suggest.disableKind": false,
+    "suggest.disableMenu": false,
+    "suggest.numberSelect": false,
+    "suggest.localityBonus": true,
+    "suggest.labelMaxLength": 200,
+    "suggest.maxPreviewWidth": 80,
+    "suggest.fixInsertedWord": true,
+    "suggest.keepCompleteopt": false,
+    "suggest.defaultSortMethod": "alphabetical",
+    "suggest.disableMenuShortcut": false,
+    "suggest.asciiCharactersOnly": false,
+    "suggest.maxCompleteItemCount": 50,
+    "suggest.languageSourcePriority": 99,
+    "suggest.minTriggerInputLength": 1,
+    "suggest.lowPrioritySourceLimit": 1,
+    "suggest.highPrioritySourceLimit": 1,
+    "suggest.invalidInsertCharacters": [
+        " ",
+        "(",
+            "<",
+            "{",
+                "[",
+                    "\r",
+                    "\n"
+                ],
+
+                "suggest.preferCompleteThanJumpPlaceholder": false,
+                "suggest.acceptSuggestionOnCommitCharacter": false,
+                "suggest.detailField": "preview",
+                "suggest.snippetIndicator": "",
+                "suggest.triggerCompletionWait": 100,
+                "suggest.echodocSupport": true,
+                "suggest.completionItemKindLabels": {
+                    "class": "\uf0e8",
+                    "color": "\ue22b",
+                    "constant": "\uf8fe",
+                    "default": "\uf29c",
+                    "enum": "\uf435",
+                    "enumMember": "\uf02b",
+                    "event": "\ufacd",
+                    "field": "\uf93d",
+                    "file": "\uf723",
+                    "folder": "\uf115",
+                    "function": "\u0192",
+                    "interface": "\uf417",
+                    "keyword": "\uf1de",
+                    "method": "\uf6a6",
+                    "module": "\uf40d",
+                    "operator": "\uf915",
+                    "property": "\ue624",
+                    "reference": "\ufa46",
+                    "snippet": "\ue60b",
+                    "struct": "\ufb44",
+                    "text": "\ue612",
+                    "typeParameter": "\uf728",
+                    "unit": "\uf475",
+                    "value": "\uf89f",
+                    "variable": "\ue71b"
+                },
+
+
+                "diagnostic.signOffset": 1,
+                "diagnostic.errorSign": "\uf467",
+                "diagnostic.warningSign": "\uf071",
+                "diagnostic.infoSign": "\uf129",
+                "diagnostic.hintSign": "\uf864",
+                "diagnostic.displayByAle": false,
+                "diagnostic.refreshOnInsertMode": false,
+                "diagnostic.refreshAfterSave": false,
+                "diagnostic.checkCurrentLine": true,
+                "diagnostic.virtualTextPrefix": " ❯❯❯ ",
+                "diagnostic.virtualText":false,
+                "codeLens.enable": true,
+                "list.previewHighlightGroup": "Statement",
+
+                "snippets.ultisnips.directories": [
+                    "UltiSnips"
+                ],
+                "list.nextKeymap": "<C-j>",
+                "list.previousKeymap": "<C-k>",
+
+                "explorer.width": 38,
+                "explorer.quitOnOpen": false,
+                "explorer.sources": [
+                    {
+                        "name": "buffer",
+                        "expand": true
+                    },
+                    {
+                        "name": "file",
+                        "expand": true
+                    }
+                ],
+                "explorer.autoCollapseOptions": [
+                    "recursive"
+                ],
+                "explorer.autoExpandMaxDepth": 20,
+                "explorer.autoExpandOptions": [
+                    "compact",
+                    "uncompact"
+                ],
+
+                "explorer.bookmark.child.labelingTemplate": "[filename][fullpath][position][line][annotation]",
+                "explorer.bookmark.child.template": "[selection | 1] [filename] [position] - [annotation]",
+                "explorer.bookmark.root.template": "[icon] [title] [hidden & 1]",
+                "explorer.buffer.child.labelingTemplate": "[name][bufname][fullpath][modified][readonly][diagnosticError][diagnosticWarning][git]",
+                "explorer.buffer.child.template": "[git | 2] [selection | 1] [bufnr] [name][modified][readonly] [fullpath]",
+                "explorer.buffer.root.template": "[icon] [title] [hidden & 1]",
+                "explorer.buffer.tabOnly": true,
+                "explorer.openAction.for.directory": "cd",
+                "explorer.contentWidth": 0,
+                "explorer.contentWidthType": "vim-width",
+                "explorer.datetime.format": "yyyy/MM/dd HH:mm:ss",
+                "explorer.debug": false,
+                "explorer.diagnostic.displayMax": 99,
+                "explorer.diagnostic.enableSubscriptNumber": false,
+                "explorer.enableFloatinput": false,
+                "explorer.file.autoReveal": true,
+                "explorer.file.child.labelingTemplate": "[fullpath][link][diagnosticError][diagnosticWarning][git][size][timeAccessed][timeModified][timeCreated][readonly][modified]",
+                "explorer.file.child.template": "[git | 2] [selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5][size]",
+                "explorer.file.column.clip.copy": "",
+                "explorer.file.column.clip.cut": "",
+                "explorer.file.column.indent.chars": "  ",
+                "explorer.file.column.indent.indentLine": true,
+
+                "explorer.activeMode": false,
+                "explorer.git.command": "git",
+                "explorer.icon.enableNerdfont": true,
+                "explorer.keyMappingMode": "none",
+                "explorer.buffer.showHiddenBuffers": true,
+                "explorer.keyMappings": {
+                    "i": false,
+                    "gk": "expandablePrev",
+                    "gj": "expandableNext",
+                    "*": "toggleSelection",
+                    "<tab>": "actionMenu",
+                    "h": "collapse",
+                    "l": ["expandable?", "expand", "open"],
+                    "J": ["toggleSelection", "nodeNext"],
+                    "K": ["toggleSelection", "nodePrev"],
+                    "gl": "expandRecursive",
+                    "gh": "collapseRecursive",
+                    "<2-LeftMouse>": [
+                        "expandable?",
+                        ["expanded?", "collapse", "expand"],
+                        "open"
+                    ],
+                    "o": ["expanded?", "collapse", "expand"],
+                    "<cr>": ["expandable?", "cd", "open"],
+                    "e": "open",
+                    "s": "open:split",
+                    "S": "open:split:plain",
+                    "E": "open:vsplit",
+                    "t": "open:tab",
+                    "<bs>": "gotoParent",
+                    "gp": "preview:labeling",
+                    "y": "copyFilepath",
+                    "Y": "copyFilename",
+                    "c": "copyFile",
+                    "x": "cutFile",
+                    "p": "pasteFile",
+                    "d": "delete",
+                    "D": "deleteForever",
+                    "a": "addFile",
+                    "A": "addDirectory",
+                    "r": "rename",
+                    ".": "toggleHidden",
+                    "R": "refresh",
+                    "?": "help",
+                    "q": "quit",
+                    "<esc>": "esc",
+                    "X": "systemExecute",
+                    "gd": "listDrive",
+                    "f": "search",
+                    "F": "searchRecursive",
+                    "gf": "gotoSource:file",
+                    "gb": "gotoSource:buffer",
+                    "[[": "sourcePrev",
+                        "]]": "sourceNext",
+                        "[d": "diagnosticPrev",
+                            "]d": "diagnosticNext",
+                            "[c": "gitPrev",
+                                "]c": "gitNext",
+                                "<<": "gitStage",
+                                ">>": "gitUnstage"
+                },
+
+                "python.analysis.logLevel": "Information",
+                "python.envFile": "${workspaceFolder}/.env",
+                "python.linting.enabled": true,
+                "python.venvFolders": [
+                    "envs",
+                    ".pyenv",
+                    ".direnv"
+                ],
+                "python.analysis.information": [],
+                "python.autoComplete.addBrackets": true,
+                "python.jediEnabled": false,
+                "python.formatting.provider": "yapf",
+                "python.formatting.yapfArgs": [
+                    "--style",
+                    "{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
+                ],
+
+
+                "java.import.callback": "",
+                "java.autobuild.enabled": true,
+                "java.completion.enabled": true,
+                //"java.format.settings.url": "/Users/lingoace/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
+                "java.templates.typeComment": [],
+                "java.selectionRange.enabled": true,
+                "java.format.settings.profile": null,
+                "java.project.resourceFilters": [
+                    "node_modules",
+                    ".git"
+                ],
+                "java.configuration.maven.userSettings": null,
+                "java.saveActions.organizeImports": false,
+                "java.templates.fileHeader": [],
+                "java.completion.overwrite": true,
+                "java.sources.organizeImports.starThreshold": 99,
+                "java.completion.filteredTypes": [
+                    "java.awt.*",
+                    "com.sun.*"
+                ],
+                "java.contentProvider.preferred": null,
+                "java.configuration.updateBuildConfiguration": "automatic",
+                "java.completion.favoriteStaticMembers": [
+                    "org.junit.Assert.*",
+                    "org.junit.Assume.*",
+                    "org.junit.jupiter.api.Assertions.*",
+                    "org.junit.jupiter.api.Assumptions.*",
+                    "org.junit.jupiter.api.DynamicContainer.*",
+                    "org.junit.jupiter.api.DynamicTest.*",
+                    "org.mockito.Mockito.*",
+                    "org.mockito.ArgumentMatchers.*",
+                    "org.mockito.Answers.*"
+                ],
+                "java.maven.updateSnapshots": false,
+                "java.debug.vimspector.profile": null,
+                "java.debug.vimspector.substitution.adapterPort": "5000",
+                "java.configuration.runtimes": [],
+                "java.codeGeneration.toString.template": "${object.className} [${member.name()}=${member.value}, ${otherMembers}]",
+                "java.codeGeneration.useBlocks": false,
+                "java.codeGeneration.toString.limitElements": 0,
+                "java.codeGeneration.hashCodeEquals.useInstanceof": false,
+                "java.codeGeneration.toString.skipNullValues": false,
+                "java.codeGeneration.toString.codeStyle": "STRING_FORMAT",
+                "java.codeGeneration.generateComments": true,
+                "java.codeGeneration.toString.listArrayContents": true,
+                "java.codeGeneration.hashCodeEquals.useJava7Objects": false,
+                "java.referencesCodeLens.enabled": false,
+                "java.format.enabled": true,
+                "java.enabled": true,
+                "java.import.exclusions": [
+                    "**/node_modules/**",
+                    "**/.metadata/**",
+                    "**/archetype-resources/**",
+                    "**/META-INF/maven/**"
+                ],
+                "java.trace.server": "messages",
+                "java.foldingRange.enabled": true,
+                "java.project.referencedLibraries": [
+                    "lib/**/*.jar"
+                ],
+                "java.errors.incompleteClasspath.severity": "ignore",
+                "java.progressReports.enabled": true,
+                "java.format.onType.fixComment.enabled": true,
+                "java.maven.downloadSources": true,
+                "java.import.maven.enabled": true,
+                "java.format.comments.enabled": true,
+                "java.signatureHelp.enabled": false,
+                "java.jdt.ls.home": "/Users/lingoace/.config/nvim/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/",
+                "java.home": "/usr/local/opt/openjdk/",
+                "java.format.onType.enabled": true,
+                // 全局配置lombok this is server 
+                //"java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"~/.config/coc/extensions/node_modules/coc-java-lombok/jar/lombok.jar\"",
+
+
+                "metals.enable": true,
+                "metals.javaHome": "",
+                "metals.sbtScript": "",
+                "metals.millScript": "",
+                "metals.mavenScript": "",
+                "metals.gradleScript": "",
+                "metals.pantsTargets": "",
+                "metals.bloopVersion": "",
+                "metals.serverVersion": "0.9.10",
+                "metals.serverProperties": [],
+                "metals.excludedPackages": [],
+                "metals.statusBarEnabled": false,
+                "metals.scalafmtConfigPath": "",
+                "metals.customRepositories": [],
+                "metals.treeviews.alignment": "left",
+                "metals.treeviews.toggleNode": "<CR>",
+                "metals.ammoniteJvmProperties": [],
+                "metals.treeviews.initialWidth": 40,
+                "metals.treeviews.initialViews": [
+                    {
+                        "name": "metalsCompile",
+                        "size": 10,
+                        "expanded": []
+                    },
+                    {
+                        "name": "metalsPackages",
+                        "size": 40,
+                        "expanded": [
+                            [
+                                "projects:"
+                            ]
+                        ]
+                    },
+                    {
+                        "name": "metalsBuild",
+                        "size": 15,
+                        "expanded": []
+                    }
+                ],
+                "metals.treeviews.gotoLastChild": "J",
+                "metals.bloopSbtAlreadyInstalled": true,
+                "metals.superMethodLensesEnabled": true,
+                "metals.treeviews.gotoParentNode": "p",
+                "metals.treeviews.gotoFirstChild": "K",
+                "metals.treeviews.executeCommand": "r",
+                "metals.treeviews.gotoNextSibling": "<C-j>",
+                "metals.treeviews.gotoPrevSibling": "<C-k>",
+                "metals.treeviews.forceChildrenReload": "f",
+                "metals.enableStripMarginOnTypeFormatting": true,
+                "metals.treeviews.executeCommandAndOpenTab": "t",
+                "metals.treeviews.executeCommandAndOpenSplit": "s",
+                "metals.treeviews.executeCommandAndOpenVSplit": "v",
+
+
+
+                "coc.source.around.enable": true,
+                "coc.source.file.shortcut": "F",
+                "coc.source.file.enable": true,
+                "coc.source.file.triggerCharacters": [
+                    "/"
+                ],
+
+
+                "clangd.enabled": true,
+                "clangd.checkUpdates": true,
+                "clangd.semanticHighlighting": true,
+                "clangd.disableSnippetCompletion": false,
+                "clangd.showDBChangedNotification": true,
+                "clangd.fallbackFlags": [],
+                "clangd.arguments": [],
+                "clangd.disableDiagnostics": false,
+                "clangd.compilationDatabasePath": "",
+                "clangd.path": "/Users/lingoace/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd",
+
+                "snippets.autoTrigger": true,
+                "snippets.trace": "verbose",
+                "snippets.extends": {},
+                "snippets.priority": 90,
+                "snippets.shortcut": "S",
+                "snippets.snipmate.enable": true,
+                "snippets.enableStatusItem": true,
+                "snippets.snipmate.author": "lingoace",
+                "snippets.ultisnips.enable": true,
+                "snippets.triggerCharacters": [],
+                "snippets.loadFromExtensions": true,
+                "snippets.editSnippetsCommand": "",
+                "snippets.ultisnips.usePythonx": true,
+                "snippets.textmateSnippetsRoots": [],
+                "snippets.ultisnips.pythonVersion": 3,
+                "snippets.userSnippetsDirectory": "",
+
+
+                "languageserver": {
+                    "golang":{
+                        "command": "gopls",
+                        "rootPatterns": [".git/",".vim/"],
+                        "filetypes": ["go"]
+                    },
+                    "bash": {
+                        "command": "bash-language-server",
+                        "args": ["start"],
+                        "filetypes": ["sh"],
+                        "ignoredRootPaths": ["~"]
+                    },
+                    "ccls": {
+                        "command": "ccls",
+                        "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+                        "rootPatterns": [".ccls", ".ccls-root", "compile_commands.json", ".git/", ".hg/"],
+                        "initializationOptions": {
+                            "cache": {
+                                "directory": "/tmp/ccls"
+                            }
+                        }
+                    }
+                }
+            }
