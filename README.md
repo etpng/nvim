@@ -31,3 +31,10 @@ and I tell me that how to re-understand the java code . and what is codding?
 * the first question is that what is building?
 * the second question ALL is file . is not you complete me .
 * the third question is how to write code. and now I should write from top to bottom.
+
+
+re commit the nvim config project to the etpng rep. and add the fzf config and fzf.vim 
+
+the question :
+1. how to ignore the .class file 
+2. how to ingore the target directory
