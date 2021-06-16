@@ -185,6 +185,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf',{'dir':'~/.fzf','do':'./install -all'}
 Plug 'tomasiser/vim-code-dark'
+"Plug 'christoomey/vim-tmux-navigator'
 "Plug 'airblade/vim-gitgutter'
 "Plug 'vifm/vifm.vim'
 "Plug 'vifm/neovim-vifm'
@@ -194,6 +195,15 @@ Plug 'tomasiser/vim-code-dark'
 "Plug 'voldikss/vim-floaterm'
 "Plug 'unblevable/quick-scope'
 call plug#end()
+
+""let g:tmux_navigator_no_mappings = 1
+""nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+""nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+""nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+""nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+""nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
+
+
 
 " This is the default option:
 "   - Preview window on the right with 50% width
@@ -453,7 +463,7 @@ function SignFileType()
         set path=.,**
         set path+=$JAVA_HOME/src/**
         " custom the make
-        set makeprg=java14
+        set makeprg=java
         " only bring into effect on current buffer
         nnoremap <buffer> im /import<CR>N$a<CR>import<space>;<left>
         nnoremap <buffer> <Leader>/ <ESC>:s/^/\/\//g<CR>

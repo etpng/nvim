@@ -1,0 +1,52 @@
+let mapleader=" "
+set helplang=cn
+set mouse=nv
+set timeoutlen=150
+set encoding=utf-8
+set number
+set nowrap
+set smartcase
+set ignorecase
+set showcmd
+set cmdheight=1
+autocmd InsertLeave,WinEnter * set cursorline
+autocmd InsertEnter,WinLeave * set nocursorline
+set complete-=i   " disable scanning included files
+set complete-=t   " disable searching tags
+set smarttab
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set clipboard+=unnamedplus
+set autoindent
+set smartindent
+set nobackup
+set nowritebackup
+set noswapfile
+set nocompatible
+filetype on
+filetype indent on
+filetype plugin on
+filetype plugin indent on
+set path+=**
+set wildmenu
+set wildmode=list:full
+set wildignore=*.o,*.obj,*.class,*.bak,*/target/,*/out/,*/.vim/,*/.git/
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set ttyfast
+set scrolloff=4
+set scrolljump=0
+set scrollback=4
+set signcolumn=yes
+set shortmess+=c
+set showbreak=>\
+map ; :
+map - $
+augroup vimrc-incsearch-highlight
+    autocmd!
+    autocmd CmdlineEnter /,\? :set hlsearch
+    autocmd CmdlineLeave /,\? :set nohlsearch
+augroup END
+nmap N Nzz
+nmap n nzz
