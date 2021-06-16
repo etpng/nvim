@@ -37,16 +37,9 @@ set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set ttyfast
 set scrolloff=4
 set scrolljump=0
-set scrollback=4
-set signcolumn=yes
 set shortmess+=c
 set showbreak=>\
 map ; :
 map - $
-augroup vimrc-incsearch-highlight
-    autocmd!
-    autocmd CmdlineEnter /,\? :set hlsearch
-    autocmd CmdlineLeave /,\? :set nohlsearch
-augroup END
 nmap N Nzz
 nmap n nzz
