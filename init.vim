@@ -40,6 +40,7 @@ vnoremap <silent> <expr>s col(".")==1?"$h":"0"
 map cc <C-w>
 map bg <C-z>
 map gg <nop>
+map mm :MaximizerToggle!<CR>
 nnoremap <silent> <expr>gg line(".")==1?"G":"gg"
 vnoremap <silent> <expr>gg line(".")==1?"G":"gg"
 
@@ -84,7 +85,7 @@ tmap <ESC> <C-\><C-n>
 if &filetype != 'vimwiki'
     " inoremap config
     inoremap < <><ESC>i
-    inoremap " ""<ESC>i
+    inoremap \" \""<ESC>i
     inoremap ' ''<ESC>i
     inoremap { {}<ESC>i
     inoremap [ []<ESC>i
@@ -119,7 +120,8 @@ set tabstop=4
 set smarttab
 set expandtab
 set shiftwidth=4
-set laststatus=0
+" this config use less
+"set laststatus=0
 set autoindent
 set smartindent
 
@@ -185,6 +187,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf',{'dir':'~/.fzf','do':'./install -all'}
 Plug 'tomasiser/vim-code-dark'
+"Plug 'kassio/neoterm'
+"Plug 'sbdchd/neoformat'
 "Plug 'christoomey/vim-tmux-navigator'
 "Plug 'airblade/vim-gitgutter'
 "Plug 'vifm/vifm.vim'
@@ -192,9 +196,44 @@ Plug 'tomasiser/vim-code-dark'
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
 "Plug 'edkolev/tmuxline.vim'
-"Plug 'voldikss/vim-floaterm'
+Plug 'szw/vim-maximizer'
+Plug 'voldikss/vim-floaterm'
+Plug 'kien/rainbow_parentheses.vim'
 "Plug 'unblevable/quick-scope'
+"Plug 'itchyny/vim-gitbranch'
 call plug#end()
+
+let g:rbpt_colorpairs = [
+            \ ['brown',       'RoyalBlue3'],
+            \ ['Darkblue',    'SeaGreen3'],
+            \ ['darkgray',    'DarkOrchid3'],
+            \ ['darkgreen',   'firebrick3'],
+            \ ['darkcyan',    'RoyalBlue3'],
+            \ ['darkred',     'SeaGreen3'],
+            \ ['darkmagenta', 'DarkOrchid3'],
+            \ ['brown',       'firebrick3'],
+            \ ['gray',        'RoyalBlue3'],
+            \ ['black',       'SeaGreen3'],
+            \ ['darkmagenta', 'DarkOrchid3'],
+            \ ['Darkblue',    'firebrick3'],
+            \ ['darkgreen',   'RoyalBlue3'],
+            \ ['darkcyan',    'SeaGreen3'],
+            \ ['darkred',     'DarkOrchid3'],
+            \ ['red',         'firebrick3'],
+            \ ]
+
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+
+
+
+
 
 ""let g:tmux_navigator_no_mappings = 1
 ""nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
@@ -232,12 +271,12 @@ let g:fzf_tags_command = 'ctags -R'
 " let g:fzf_commands_expect = 'alt-enter,ctrl-x'
 
 command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'cat {}']}, <bang>0)
+            \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'cat {}']}, <bang>0)
 
 command! -bang -nargs=* GGrep
-  \ call fzf#vim#grep(
-  \   'git grep --line-number -- '.shellescape(<q-args>), 0,
-  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+            \ call fzf#vim#grep(
+            \   'git grep --line-number -- '.shellescape(<q-args>), 0,
+            \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
 
 
@@ -398,7 +437,7 @@ nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
 nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
-nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+"nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
 nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
@@ -435,78 +474,30 @@ if exists('g:qs_enable')
     xmap <leader>q <plug>(QuickScopeToggle)
 endif
 
-"let loaded_vifm=1
+let loaded_vifm=1
 
-if 1 == 1
-    " Translate
-    nmap <silent> <Leader>w <Plug>TranslateW
-    vmap <silent> <Leader>w <Plug>TranslateWV
-    nmap <silent> <Leader>r <Plug>TranslateR
-    vmap <silent> <Leader>r <Plug>TranslateRV
-    nmap <silent> <Leader>x <Plug>TranslateX
-endif
+nmap <silent> <Leader>w <Plug>TranslateW
+vmap <silent> <Leader>w <Plug>TranslateWV
+nmap <silent> <Leader>r <Plug>TranslateR
+vmap <silent> <Leader>r <Plug>TranslateRV
+nmap <silent> <Leader>x <Plug>TranslateX
 
 function SignFileType()
-    " set different config by filetype
     if &filetype == 'c' || &filetype == 'h'
         set makeprg=gcc
     elseif &filetype =='cpp'
     elseif &filetype == 'sh'
-        " shell
         set makeprg=zsh
     elseif &filetype == 'python'
     elseif &filetype == 'vim'
-        " use the regix expression to change the first character to "
         nnoremap <buffer> <C-/> <ESC>:s/^/"/g<CR>
     elseif &filetype == 'java'
-        " Use VIM to write java progress
         set path=.,**
         set path+=$JAVA_HOME/src/**
-        " custom the make
         set makeprg=java
-        " only bring into effect on current buffer
-        nnoremap <buffer> im /import<CR>N$a<CR>import<space>;<left>
         nnoremap <buffer> <Leader>/ <ESC>:s/^/\/\//g<CR>
         nnoremap <buffer> F- 0f-2xi
         nnoremap <buffer> f- f-2xi
-        " use the // to  annotation code lead to single / become slow
-        "nnoremap // 0i//<ESC>:Autoformat<CR>
-        "vnoremap // 0I//<ESC>:Autoformat<CR>
-
-        " must create a habit, and not more and more alter or update the vim
-        " setting file
-        if  !exists('g:idea_vimrc')
-            " Only edit java code by vim,IDEA load the config
-            inoremap <buffer> <silent> sout System.out.println(--);<ESC>
-            inoremap <buffer> <silent> pv- @Test<CR>public void --(){<CR>}<ESC>
-            inoremap <buffer> <silent> as- assert --:--;<ESC>
-            inoremap <buffer> <silent> psv- @Test<CR>public static void --(){<CR>}<ESC>
-            " you should use the psvm to instead of the main method code fragment rather than using the keyword of main.
-            inoremap <buffer> <silent> psvm public static void main(String[] args){<CR>}<ESC>
-            inoremap <buffer> <silent> m-nh Map<String,--> -- = new HashMap<String,-->();<ESC>
-            inoremap <buffer> <silent> l-na List<--> -- = new ArrayList<-->();<ESC>
-            inoremap <buffer> <silent> l-nl List<--> -- = new LinkedList<-->();<ESC>
-            inoremap <buffer> <silent> ijum import java.util.Map;<CR>import java.util.HashMap;<ESC>
-            inoremap <buffer> <silent> ijul import java.util.List;<CR>import java.util.ArrayList;<ESC>
-            inoremap <buffer> <silent> pc- public class -- {<CR>}<ESC>
-            inoremap <buffer> <silent> pi- public interface --{<CR>}<ESC>
-            " method , variable
-            inoremap <buffer> <silent> --- -- -- -- <ESC>
-            inoremap <buffer> <silent> pS- private String --;<ESC>
-            inoremap <buffer> <silent> pI- private Integer --;<ESC>
-            inoremap <buffer> <silent> ttnt Thread -- = new Thread(--);<ESC>
-            inoremap <buffer> <silent> iosbfa import org.springframework.beans.factory.annotation.--;<CR>
-            inoremap <buffer> <silent> ioswba import org.springframework.web.bind.annotation.--;<CR>
-            inoremap <buffer> <silent> ioss import org.springframework.stereotype.--;<CR>
-            " how to kown the current project's package name
-            inoremap <buffer> <silent> pced- package com.example.demo.--;<CR>
-            inoremap <buffer> <silent> iced- import com.example.demo.--;<CR>
-            inoremap <buffer> <silent> ijnc- import java.nio.channels.--;<CR>
-            inoremap <buffer> <silent> ijn- import java.nio.--;<CR>
-            inoremap <buffer> <silent> lllg Logger logger = LoggerFactory.getLogger(--.class);<ESC>
-            inoremap <buffer> <silent> isceduas import static com.example.demo.util.Assertion.state;<CR>
-            inoremap <buffer> <silent> iosL import org.slf4j.Logger;<CR>import org.slf4j.LoggerFactory;<CR><ESC>
-        endif
     elseif &filetype == 'scala'
     elseif &filetype == 'js'
     elseif &filetype == 'md' || &filetype == 'vimwiki'

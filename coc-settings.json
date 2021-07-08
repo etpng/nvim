@@ -1,6 +1,6 @@
 {
-
-
-
-
+  "java.jdt.ls.home": "/Users/lingoace/.config/nvim/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/",
+  "java.home": "/usr/local/opt/openjdk/",
+  "java.format.onType.enabled": true,
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"~/.config/coc/extensions/node_modules/coc-java-lombok/jar/lombok.jar\""
 }
