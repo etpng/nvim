@@ -33,6 +33,7 @@ augroup END
 let mapleader=" "
 map ; :
 map - $
+"map <>
 map R <C-r>
 map s <nop>
 nnoremap <silent> <expr>s col(".")==1?"$":"0"
@@ -49,12 +50,12 @@ map <LEADER>rc :edit ~/.config/nvim/init.vim<CR>
 map <LEADER>sc :so ~/.config/nvim/init.vim<CR>
 ""map <LEADER>f :find<Space>
 map <LEADER>f :GFiles<CR>
-map <LEADER>b :buffers<CR>
+map <LEADER>b :Buffers<CR>
 map <LEADER>e :edit %:p:h
 map <LEADER>s :w %:p:h
 map <LEADER>v :VimwikiIndex<CR>
 map <LEADER>k :!mkdir -p %:h
-map <LEADER>t :terminal<CR>
+map <LEADER>t :FloatermToggle!<CR>
 map <LEADER>a za
 map <LEADER>m :marks<CR>
 map <LEADER>n :Lexplore!<CR>
@@ -82,16 +83,16 @@ map M :make %<CR>
 "map Q Q
 tmap <ESC> <C-\><C-n>
 
-if &filetype != 'vimwiki'
-    " inoremap config
-    inoremap < <><ESC>i
-    inoremap \" \""<ESC>i
-    inoremap ' ''<ESC>i
-    inoremap { {}<ESC>i
-    inoremap [ []<ESC>i
-    inoremap ( ()<ESC>i
-    inoremap !< <!-- --><ESC>
-endif
+"if &filetype != 'vimwiki'
+"    " inoremap config
+"    inoremap < <><ESC>i
+"    inoremap \" \""<ESC>i
+"    inoremap ' ''<ESC>i
+"    inoremap { {}<ESC>i
+"    inoremap [ []<ESC>i
+"    inoremap ( ()<ESC>i
+"    inoremap !< <!-- --><ESC>
+"endif
 
 set helplang=cn
 set langmenu=zh_CN.UTF-8
